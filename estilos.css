@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.gifer.com/g0R9.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor-bienvenida {
+    background-image: url('https://i.gifer.com/1ktC.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo-bienvenida {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff; /* blanco */
+    text-shadow: 2px 2px 4px #000;
+    font-size: 36px;
+}
+
+.titulo-computadoras {
+    font-family: 'Orbitron', sans-serif;
+    color: #ff0000; /* rojo */
+    text-shadow: 2px 2px 4px #000;
+    font-size: 36px;
+}
+
+.contenedor-principal {
+    background-image: url('https://i.gifer.com/NIbp.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.tarjetas-computadoras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta-computadora {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s ease-in-out;
+}
+
+.tarjeta-computadora:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.tarjeta-computadora h2 {
+    margin-top: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.tarjeta-computadora:hover h2 {
+    opacity: 1;
+    animation: aparecer 0.5s ease-in-out;
+}
+
+.tarjeta-computadora p {
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.tarjeta-computadora:hover p {
+    opacity: 1;
+    animation: aparecer 0.5s ease-in-out;
+}
+
+.imagen-computadora {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.boton-entrada {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton-entrada:hover {
+    background-color: #444;
+}
+
+.boton-catalogo {
+    background-color: #f31010;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton-catalogo:hover {
+    background-color: #fa0d0d;
+}
+
+.boton-volver {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton-volver:hover {
+    background-color: #444;
+}
+
+.contenedor-catalogo {
+    background-image: url('https://i.gifer.com/g0R9.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.tarjetas-catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta-catalogo {
+    background-color: #f7f3f3;
+    border: 1px solid #e00d0d;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s ease-in-out;
+}
+
+.tarjeta-catalogo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.tarjeta-catalogo h2 {
+    margin-top: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.tarjeta-catalogo:hover h2 {
+    opacity: 1;
+    animation: aparecer 0.5s ease-in-out;
+}
+
+.tarjeta-catalogo p {
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.tarjeta-catalogo:hover p {
+    opacity: 1;
+    animation: aparecer 0.5s ease-in-out;
+}
+
+.imagen-catalogo {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.titulo-catalogo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px #000;
+    font-weight: bold;
+}
+
+.boton-comprar {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton-comprar:hover {
+    background-color: #444;
+}
+
+.formulario-compra {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.boton-enviar {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton-enviar:hover {
+    background-color: #444;
+}
+
+.boton-cancelar {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton-cancelar:hover {
+    background-color: #444;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
